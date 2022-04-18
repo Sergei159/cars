@@ -28,7 +28,7 @@ create table if not exists post(
     description text,
     car_id int not null references car(id),
     user_id int not null references users(id),
-    photo byte[],
+    photo bytea,
     isSold boolean
 );
 
