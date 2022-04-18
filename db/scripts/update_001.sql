@@ -19,7 +19,7 @@ create table if not exists car(
 create table if not exists users(
     id serial primary key,
     name text,
-    email text unique,
+    email varchar unique,
     password text
 );
 
